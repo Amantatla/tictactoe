@@ -1,0 +1,12 @@
+<button style="height: 150px;
+width: 150px;"
+class="btn"
+[ngClass]="{
+  'btn-primary': !value,
+  'btn-success': value === 'X',
+  'btn-info': value === 'O'
+}"
+(click)="onClick()"
+>
+{{ value }}
+</button> 
